@@ -8,7 +8,47 @@
 
 <ion-content>
   <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+    <h1>Hello world</h1>
+    
+    <ion-button color="secondary">
+        <ion-icon name="help-buoy" slot="start"></ion-icon>
+        cliquez moi
+    </ion-button>
+
+    <ion-list>
+      <ion-list-header>Fruits</ion-list-header>
+      <ion-item-sliding>
+        <ion-item>menu glissant</ion-item>
+
+        <ion-item-options side="end">
+          <ion-button size="small" color="danger">delete</ion-button>
+          <ion-item-option color="success">Edit</ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+      <ion-item>
+        <ion-avatar slot="end">
+            <ion-img src="/assets/pommes.jpg"></ion-img>
+        </ion-avatar>
+        
+        Pommes
+      </ion-item>
+      <ion-item>Poires</ion-item>
+      <ion-item>Oranges</ion-item>
+
+      <ion-item-group>
+          <ion-item-divider>A</ion-item-divider>
+          <ion-item>abricots</ion-item>
+          <ion-item>ananas</ion-item>
+          <ion-item-divider>B</ion-item-divider>
+          <ion-item>bananes</ion-item>
+          <ion-item>brugnons</ion-item>
+        </ion-item-group>
+    </ion-list>
   </div>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-label>&copy; moi et mon nombril</ion-label>
+  </ion-toolbar>
+</ion-footer>
